@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
-import { StoreSummary } from '../store-summary';
-import { StoreSummaryService } from '../store-summary.service';
+import { StoreSummary } from '../../model/store-summary';
+import { StoreSummaryService } from '../../services/store-summary.service';
 
 @Component({
   selector: 'app-dash',
-  templateUrl: './dash.component.html',
-  styleUrls: ['./dash.component.scss']
+  templateUrl: './personal.component.html',
+  styleUrls: ['./personal.component.scss']
 })
-export class DashComponent implements OnInit {
+export class PersonalComponent implements OnInit {
 
   miniCardData: StoreSummary[];
 

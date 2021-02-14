@@ -74,17 +74,97 @@ replace <--Add Content ...> in nav.component.html with:
 <router-outlet></router-outlet>
 ```
 
-# Create Dashboard
+# Create Community Dashboard
 
-ng generate @angular/material:dashboard dash
+ng generate @angular/material:dashboard components/community
 
 
 modify app-routing.module.ts with
 ```
-import { DashComponent } from './dash/dash.component';
+import { CommunityComponent } from './components/community/community.component';
 
-const routes: Routes = [{ path: 'dashboard', component: DashComponent }];
+const routes: Routes = [{ path: 'community', component: CommunityComponent }];
 ```
+# Create Air Dashboard
+
+ng generate @angular/material:dashboard components/air
+
+
+modify app-routing.module.ts with
+```
+{ path: 'air', component: AirComponent }
+```
+
+# Create Water Dashboard
+
+ng generate @angular/material:dashboard components/water
+
+
+modify app-routing.module.ts with
+```
+{ path: 'water', component: WaterComponent }
+```
+
+# Create Carbon Dashboard
+
+ng generate @angular/material:dashboard components/carbon
+
+
+modify app-routing.module.ts with
+```
+{ path: 'carbon', component: CarbonComponent }
+```
+
+# Create Plants Dashboard
+
+ng generate @angular/material:dashboard components/plants
+
+
+modify app-routing.module.ts with
+```
+{ path: 'plants', component: PlantsComponent }
+```
+
+# Create Animals Dashboard
+
+ng generate @angular/material:dashboard components/animals
+
+
+modify app-routing.module.ts with
+```
+{ path: 'animals', component: AnimalsComponent }
+```
+
+# Create Soil Dashboard
+
+ng generate @angular/material:dashboard components/soil
+
+
+modify app-routing.module.ts with
+```
+{ path: 'soil', component: SoilComponent }
+```
+
+# Create Personal Dashboard
+
+ng generate @angular/material:dashboard components/personal
+
+
+modify app-routing.module.ts with
+```
+{ path: 'personal', component: PersonalComponent }
+```
+
+# Create Members Dashboard
+
+ng generate @angular/material:dashboard components/members
+
+
+modify app-routing.module.ts with
+```
+{ path: 'members', component: MembersComponent }
+```
+
 
 # Create Card Component
 
@@ -155,7 +235,7 @@ mat-card {
 }
 ```
 
-replace cards with below in dash.component.ts:
+replace cards with below in personal.component.ts:
 ```
 cardLayout = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
    map(({ matches }) => {
@@ -178,7 +258,7 @@ cardLayout = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
  );
  ```
 
- replace dash.component.html with
+ replace personal.component.html with
  ```
  <div class="grid-container">
   <h1 class="mat-h1">Dashboard</h1>
