@@ -3,14 +3,14 @@ import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
 
 @Component({
-  selector: 'app-annual-income-chart',
-  templateUrl: './annual-income-chart.component.html',
-  styleUrls: ['./annual-income-chart.component.scss']
+  selector: 'app-water-usage-chart',
+  templateUrl: './water-usage-chart.component.html',
+  styleUrls: ['./water-usage-chart.component.scss']
 })
-export class AnnualIncomeChartComponent implements OnInit {
+export class WaterUsageChartComponent implements OnInit {
 
   public lineChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Béeso' },
+    { data: [5.2, 4.8, 3.3, 2.2, 2.0, 1.9, 2.15], label: 'Water Usage (Millions of Gallons)' },
   ];
   public lineChartLabels: Label[] = ['August', 'September', 'October', 'November', 'December', 'January', 'February'];
   public lineChartOptions: ChartOptions = {

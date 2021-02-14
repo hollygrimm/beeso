@@ -46,6 +46,9 @@ import { RemindersComponent } from './components/tables/reminders/reminders.comp
 import { MarketplaceTableComponent } from './components/tables/marketplace-table/marketplace-table.component';
 import { MembersTableComponent } from './components/tables/members-table/members-table.component';
 import { ProposalsTableComponent } from './components/tables/proposals-table/proposals-table.component';
+import { ReservoirChartComponent } from './components/charts/reservoir-chart/reservoir-chart.component';
+import { RainfallChartComponent } from './components/charts/rainfall-chart/rainfall-chart.component';
+import { WaterUsageChartComponent } from './components/charts/water-usage-chart/water-usage-chart.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +76,10 @@ import { ProposalsTableComponent } from './components/tables/proposals-table/pro
     SettingsComponent,
     MarketplaceTableComponent,
     MembersTableComponent,
-    ProposalsTableComponent
+    ProposalsTableComponent,
+    ReservoirChartComponent,
+    RainfallChartComponent,
+    WaterUsageChartComponent
   ],
   imports: [
     BrowserModule,

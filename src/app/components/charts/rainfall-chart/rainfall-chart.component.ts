@@ -3,14 +3,14 @@ import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
 
 @Component({
-  selector: 'app-annual-income-chart',
-  templateUrl: './annual-income-chart.component.html',
-  styleUrls: ['./annual-income-chart.component.scss']
+  selector: 'app-rainfall-chart',
+  templateUrl: './rainfall-chart.component.html',
+  styleUrls: ['./rainfall-chart.component.scss']
 })
-export class AnnualIncomeChartComponent implements OnInit {
+export class RainfallChartComponent implements OnInit {
 
   public lineChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Béeso' },
+    { data: [2.2, 3.5, 1.5, 2, 2.1, 1, 1.2], label: 'Rainfall (inches)' },
   ];
   public lineChartLabels: Label[] = ['August', 'September', 'October', 'November', 'December', 'January', 'February'];
   public lineChartOptions: ChartOptions = {

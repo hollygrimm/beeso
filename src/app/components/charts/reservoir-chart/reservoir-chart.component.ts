@@ -3,14 +3,14 @@ import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
 
 @Component({
-  selector: 'app-annual-income-chart',
-  templateUrl: './annual-income-chart.component.html',
-  styleUrls: ['./annual-income-chart.component.scss']
+  selector: 'app-reservoir-chart',
+  templateUrl: './reservoir-chart.component.html',
+  styleUrls: ['./reservoir-chart.component.scss']
 })
-export class AnnualIncomeChartComponent implements OnInit {
+export class ReservoirChartComponent implements OnInit {
 
   public lineChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Béeso' },
+    { data: [42, 30, 78, 81, 56, 52, 40], label: 'Total Reservoir Levels' },
   ];
   public lineChartLabels: Label[] = ['August', 'September', 'October', 'November', 'December', 'January', 'February'];
   public lineChartOptions: ChartOptions = {
