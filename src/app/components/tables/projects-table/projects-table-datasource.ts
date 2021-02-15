@@ -5,26 +5,26 @@ import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
 
 // TODO: Replace this with your own data model type
-export interface RemindersItem {
+export interface ProjectsTableItem {
   name: string;
   id: number;
-  date: Date;
+  completed: Date;
 }
 
 // TODO: replace this with real data from your application
-const EXAMPLE_DATA: RemindersItem[] = [
-  {id: 1, name: 'Pick up CSA', date: new Date('02/21/21')},
-  {id: 1, name: 'Monthly DAO', date: new Date('02/28/21')},
-  {id: 1, name: 'Language Class', date: new Date('03/04/21')},  
+const EXAMPLE_DATA: ProjectsTableItem[] = [
+  {id: 1, name: 'Water Tank Install at 1 Main St', completed: new Date("2/2/2021")},
+  {id: 2, name: 'Riparian Habitat Improvement', completed: new Date("1/8/2021")},
+  {id: 3, name: 'Uranium Cleanup', completed: new Date("12/4/2020")},
 ];
 
 /**
- * Data source for the Reminders view. This class should
+ * Data source for the ProjectsTable view. This class should
  * encapsulate all logic for fetching and manipulating the displayed data
  * (including sorting, pagination, and filtering).
  */
-export class RemindersDataSource extends DataSource<RemindersItem> {
-  data: RemindersItem[] = EXAMPLE_DATA;
+export class ProjectsTableDataSource extends DataSource<ProjectsTableItem> {
+  data: ProjectsTableItem[] = EXAMPLE_DATA;
   paginator: MatPaginator;
   sort: MatSort;
 
@@ -37,7 +37,7 @@ export class RemindersDataSource extends DataSource<RemindersItem> {
    * the returned stream emits new items.
    * @returns A stream of the items to be rendered.
    */
-  connect(): Observable<RemindersItem[]> {
+  connect(): Observable<ProjectsTableItem[]> {
     // Combine everything that affects the rendered data into one update
     // stream for the data-table to consume.
     const dataMutations = [
@@ -61,7 +61,7 @@ export class RemindersDataSource extends DataSource<RemindersItem> {
    * Paginate the data (client-side). If you're using server-side pagination,
    * this would be replaced by requesting the appropriate data from the server.
    */
-  private getPagedData(data: RemindersItem[]) {
+  private getPagedData(data: ProjectsTableItem[]) {
     const startIndex = this.paginator.pageIndex * this.paginator.pageSize;
     return data.splice(startIndex, this.paginator.pageSize);
   }
@@ -70,7 +70,7 @@ export class RemindersDataSource extends DataSource<RemindersItem> {
    * Sort the data (client-side). If you're using server-side sorting,
    * this would be replaced by requesting the appropriate data from the server.
    */
-  private getSortedData(data: RemindersItem[]) {
+  private getSortedData(data: ProjectsTableItem[]) {
     if (!this.sort.active || this.sort.direction === '') {
       return data;
     }
@@ -80,7 +80,7 @@ export class RemindersDataSource extends DataSource<RemindersItem> {
       switch (this.sort.active) {
         case 'name': return compare(a.name, b.name, isAsc);
         case 'id': return compare(+a.id, +b.id, isAsc);
-        case 'date': return compare(+a.id, +b.id, isAsc);
+        case 'date': return compare(+a.completed, +b.completed, isAsc);
         default: return 0;
       }
     });

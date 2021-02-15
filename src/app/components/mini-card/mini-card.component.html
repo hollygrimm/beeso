@@ -11,7 +11,7 @@
     <h3 class="title-text">{{title}}</h3>
     <p class="difference-text">
         <span
-            [ngClass]="{ 'green-text': isIncrease, 'red-text': !isIncrease }">{{ isIncrease ? '+' : '-' }}{{ percentValue | percent:'2.1-2' }}
+            [ngClass]="{ 'green-text': isPositiveTrend, 'red-text': !isPositiveTrend }">{{ isIncrease ? '+' : '-' }}{{ percentValue | percent:'2.1-2' }}
             <mat-icon *ngIf="isIncrease">arrow_upward</mat-icon>
             <mat-icon *ngIf="!isIncrease">arrow_downward</mat-icon>
         </span>

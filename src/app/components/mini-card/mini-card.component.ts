@@ -11,6 +11,7 @@ export class MiniCardComponent implements OnInit {
   @Input() value: number;
   @Input() color: string;
   @Input() isIncrease: boolean;
+  @Input() isPositiveTrend: boolean;
   @Input() isCurrency: boolean;
   @Input() duration: string;
   @Input() percentValue: number;

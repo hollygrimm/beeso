@@ -2,31 +2,24 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
-import { ProposalsTableDataSource, ProposalsTableItem } from './proposals-table-datasource';
+import { ProjectsTableDataSource, ProjectsTableItem } from './projects-table-datasource';
 
 @Component({
-  selector: 'app-proposals-table',
-  templateUrl: './proposals-table.component.html',
-  styleUrls: ['./proposals-table.component.scss']
+  selector: 'app-projects-table',
+  templateUrl: './projects-table.component.html',
+  styleUrls: ['./projects-table.component.scss']
 })
-export class ProposalsTableComponent implements AfterViewInit, OnInit {
+export class ProjectsTableComponent implements AfterViewInit, OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
-  @ViewChild(MatTable) table: MatTable<ProposalsTableItem>;
-  dataSource: ProposalsTableDataSource;
+  @ViewChild(MatTable) table: MatTable<ProjectsTableItem>;
+  dataSource: ProjectsTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name', 'notes',
-  'air',
-  'biodiversity',
-  'carbon',
-  'culture',
-  'soil',
-  'water',
-  'status'];
+  displayedColumns = ['id', 'name', 'completed'];
 
   ngOnInit() {
-    this.dataSource = new ProposalsTableDataSource();
+    this.dataSource = new ProjectsTableDataSource();
   }
 
   ngAfterViewInit() {

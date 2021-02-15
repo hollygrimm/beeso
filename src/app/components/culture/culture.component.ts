@@ -3,11 +3,11 @@ import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
-  selector: 'app-proposals',
-  templateUrl: './proposals.component.html',
-  styleUrls: ['./proposals.component.scss']
+  selector: 'app-culture',
+  templateUrl: './culture.component.html',
+  styleUrls: ['./culture.component.scss']
 })
-export class ProposalsComponent {
+export class CultureComponent {
   cardLayout = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
       if (matches) {
@@ -18,11 +18,12 @@ export class ProposalsComponent {
           table: { cols: 1, rows: 4 },
         };
       }
+ 
      return {
         columns: 4,
         miniCard: { cols: 1, rows: 1 },
-        chart: { cols: 4, rows: 2 },
-        table: { cols: 4, rows: 4 },
+        chart: { cols: 2, rows: 2 },
+        table: { cols: 2, rows: 2 },
       };
     })
   );

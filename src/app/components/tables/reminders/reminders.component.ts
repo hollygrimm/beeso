@@ -16,7 +16,7 @@ export class RemindersComponent implements AfterViewInit, OnInit {
   dataSource: RemindersDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = ['id', 'name', 'date'];
 
   ngOnInit() {
     this.dataSource = new RemindersDataSource();

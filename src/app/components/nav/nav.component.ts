@@ -11,7 +11,7 @@ import { map, shareReplay } from 'rxjs/operators';
 
 export class NavComponent {
 
-  communityMenuItems = ['air', 'animals', 'carbon', 'plants', 'soil', 'water'];
+  communityMenuItems = ['air', 'biodiversity', 'carbon', 'culture', 'soil', 'water'];
 
   menuItems = ['personal', 'marketplace', 'proposals', 'members', 'settings'];
 

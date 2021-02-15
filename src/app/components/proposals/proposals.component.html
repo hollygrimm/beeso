@@ -1,8 +1,8 @@
 <div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile colspan="2" rowspan="2">
-      <app-card title="Proposals" icon="done">
+  <h1 class="mat-h1">Proposals</h1>
+  <mat-grid-list cols="{{ ( cardLayout | async )?.columns }}" rowHeight="200px">
+    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <app-card title="Latest" icon="text_snippet">
         <app-proposals-table></app-proposals-table>
       </app-card>
     </mat-grid-tile> 

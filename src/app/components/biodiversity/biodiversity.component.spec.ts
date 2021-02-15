@@ -7,15 +7,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 
-import { PlantsComponent } from './plants.component';
+import { BiodiversityComponent } from './biodiversity.component';
 
-describe('PlantsComponent', () => {
-  let component: PlantsComponent;
-  let fixture: ComponentFixture<PlantsComponent>;
+describe('BiodiversityComponent', () => {
+  let component: BiodiversityComponent;
+  let fixture: ComponentFixture<BiodiversityComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [PlantsComponent],
+      declarations: [BiodiversityComponent],
       imports: [
         NoopAnimationsModule,
         LayoutModule,
@@ -29,7 +29,7 @@ describe('PlantsComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PlantsComponent);
+    fixture = TestBed.createComponent(BiodiversityComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -20,3 +20,10 @@
   flex: 1 1 auto;
 }
 
+.circle-wrapper {
+  height: 30px;
+  circle: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+

@@ -24,11 +24,10 @@ import { MatSortModule } from '@angular/material/sort';
 import { MiniCardComponent } from './components/mini-card/mini-card.component';
 
 import { AirComponent } from './components/air/air.component';
-import { AnimalsComponent } from './components/animals/animals.component';
+import { BiodiversityComponent } from './components/biodiversity/biodiversity.component';
 import { CarbonComponent } from './components/carbon/carbon.component';
 import { CommunityComponent } from './components/community/community.component';
 import { PersonalComponent } from './components/personal/personal.component';
-import { PlantsComponent } from './components/plants/plants.component';
 import { SoilComponent } from './components/soil/soil.component';
 import { WaterComponent } from './components/water/water.component';
 import { MembersComponent } from './components/members/members.component';
@@ -49,6 +48,11 @@ import { ProposalsTableComponent } from './components/tables/proposals-table/pro
 import { ReservoirChartComponent } from './components/charts/reservoir-chart/reservoir-chart.component';
 import { RainfallChartComponent } from './components/charts/rainfall-chart/rainfall-chart.component';
 import { WaterUsageChartComponent } from './components/charts/water-usage-chart/water-usage-chart.component';
+import { WasteChartComponent } from './components/charts/waste-chart/waste-chart.component';
+import { SolarCapacityChartComponent } from './components/charts/solar-capacity-chart/solar-capacity-chart.component';
+import { ProjectsTableComponent } from './components/tables/projects-table/projects-table.component';
+import { CultureComponent } from './components/culture/culture.component';
+import { CulturalProjectsTableComponent } from './components/tables/cultural-projects-table/cultural-projects-table.component';
 
 @NgModule({
   declarations: [
@@ -67,8 +71,7 @@ import { WaterUsageChartComponent } from './components/charts/water-usage-chart/
     AirComponent,
     WaterComponent,
     CarbonComponent,
-    PlantsComponent,
-    AnimalsComponent,
+    BiodiversityComponent,
     SoilComponent,
     MembersComponent,
     MarketplaceComponent,
@@ -79,7 +82,12 @@ import { WaterUsageChartComponent } from './components/charts/water-usage-chart/
     ProposalsTableComponent,
     ReservoirChartComponent,
     RainfallChartComponent,
-    WaterUsageChartComponent
+    WaterUsageChartComponent,
+    WasteChartComponent,
+    SolarCapacityChartComponent,
+    ProjectsTableComponent,
+    CultureComponent,
+    CulturalProjectsTableComponent
   ],
   imports: [
     BrowserModule,

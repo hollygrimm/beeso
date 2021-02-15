@@ -7,15 +7,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 
-import { AnimalsComponent } from './animals.component';
+import { CultureComponent } from './culture.component';
 
-describe('AnimalsComponent', () => {
-  let component: AnimalsComponent;
-  let fixture: ComponentFixture<AnimalsComponent>;
+describe('CultureComponent', () => {
+  let component: CultureComponent;
+  let fixture: ComponentFixture<CultureComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [AnimalsComponent],
+      declarations: [CultureComponent],
       imports: [
         NoopAnimationsModule,
         LayoutModule,
@@ -29,7 +29,7 @@ describe('AnimalsComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AnimalsComponent);
+    fixture = TestBed.createComponent(CultureComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
