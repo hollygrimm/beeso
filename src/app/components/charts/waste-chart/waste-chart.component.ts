@@ -24,9 +24,9 @@ export class WasteChartComponent implements OnInit {
   ];
 
   public barChartColors: Color[] = [
-    { backgroundColor: 'rgb(255, 215, 64)' },
+    { backgroundColor: '#ffe680' },
     { backgroundColor: 'rgb(170, 170, 170)' },
-    { backgroundColor: 'rgb(103, 58, 183)' },
+    { backgroundColor: '#b18efc' },
   ] 
 
   constructor() { }

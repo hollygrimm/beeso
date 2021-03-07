@@ -11,6 +11,7 @@ export interface ProposalsTableItem {
   notes: string;
   air: number;
   biodiversity: number;
+  foodsecurity: number; 
   carbon: number;
   culture: number;
   soil: number;
@@ -20,9 +21,9 @@ export interface ProposalsTableItem {
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: ProposalsTableItem[] = [
-  {id: 1, name: 'Solar Farm', notes: 'Passed: 2 YES, 0 NO', air: 0, biodiversity: -2, carbon: 4, culture: 0, soil: 0,  water: 0, status: 'PASSED'},
-  {id: 2, name: 'Oil Well - Fracking', notes: 'Failed: 0 YES, 2 NO', air: -4, biodiversity: -5, carbon: -5, culture: -3, soil: -5,  water: -5, status: 'FAILED'},
-  {id: 3, name: 'Tree Planting Project', notes: 'RATING TBD', air: null, biodiversity: null, carbon: null, culture: null, soil: null,  water: null, status: 'NOT YET RATED'},
+  {id: 1, name: 'Solar Farm', notes: 'Passed: 2 YES, 0 NO', air: 0, biodiversity: -2, carbon: 4, culture: 0, foodsecurity: 0, soil: 0,  water: 0, status: 'PASSED'},
+  {id: 2, name: 'Oil Well - Fracking', notes: 'Failed: 0 YES, 2 NO', air: -4, biodiversity: -5, carbon: -5, culture: -3, foodsecurity: 0, soil: -5,  water: -5, status: 'FAILED'},
+  {id: 3, name: 'Tree Planting Project', notes: 'RATING TBD', air: null, biodiversity: null, carbon: null, culture: null, foodsecurity: null, soil: null,  water: null, status: 'NOT YET RATED'},
 ];
 
 /**

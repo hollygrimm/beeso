@@ -18,7 +18,7 @@ export class AnnualIncomeChartComponent implements OnInit {
   };
   public lineChartColors: Color[] = [
     {
-      backgroundColor: 'rgb(103, 58, 183)',
+      backgroundColor: '#b18efc',
     },
   ];
   public lineChartLegend = true;

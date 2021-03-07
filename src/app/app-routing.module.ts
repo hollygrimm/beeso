@@ -12,13 +12,18 @@ import { MarketplaceComponent } from './components/marketplace/marketplace.compo
 import { MembersComponent } from './components/members/members.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { CultureComponent } from './components/culture/culture.component';
+import { FoodsecurityComponent } from './components/foodsecurity/foodsecurity.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent},
   { path: 'community', component: CommunityComponent},
   { path: 'air', component: AirComponent },
   { path: 'biodiversity', component: BiodiversityComponent },
   { path: 'carbon', component: CarbonComponent },
   { path: 'culture', component: CultureComponent },
+  { path: 'foodsecurity', component: FoodsecurityComponent },
   { path: 'soil', component: SoilComponent },
   { path: 'water', component: WaterComponent },
 

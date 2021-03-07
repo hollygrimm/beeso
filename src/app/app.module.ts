@@ -53,6 +53,8 @@ import { SolarCapacityChartComponent } from './components/charts/solar-capacity-
 import { ProjectsTableComponent } from './components/tables/projects-table/projects-table.component';
 import { CultureComponent } from './components/culture/culture.component';
 import { CulturalProjectsTableComponent } from './components/tables/cultural-projects-table/cultural-projects-table.component';
+import { FoodsecurityComponent } from './components/foodsecurity/foodsecurity.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +89,9 @@ import { CulturalProjectsTableComponent } from './components/tables/cultural-pro
     SolarCapacityChartComponent,
     ProjectsTableComponent,
     CultureComponent,
-    CulturalProjectsTableComponent
+    CulturalProjectsTableComponent,
+    FoodsecurityComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

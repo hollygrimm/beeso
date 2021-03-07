@@ -21,6 +21,7 @@ export class ProposalsTableComponent implements AfterViewInit, OnInit {
   'biodiversity',
   'carbon',
   'culture',
+  'foodsecurity',
   'soil',
   'water',
   'status'];

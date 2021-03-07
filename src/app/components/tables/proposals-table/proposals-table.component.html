@@ -34,6 +34,11 @@
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Culture</th>
       <td mat-cell *matCellDef="let row" class="td-left" [ngClass]="[row.animals > 0 ? 'positiveamt' : 'negativeamt']">{{row.culture}}</td>
     </ng-container>       
+
+    <ng-container matColumnDef="foodsecurity">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Food Security</th>
+      <td mat-cell *matCellDef="let row" class="td-left" [ngClass]="[row.animals > 0 ? 'positiveamt' : 'negativeamt']">{{row.foodsecurity}}</td>
+    </ng-container>          
     
     <ng-container matColumnDef="plants">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Plants</th>

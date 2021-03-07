@@ -23,8 +23,8 @@ export class IncomeSourceChartComponent implements OnInit {
   ];
 
   public barChartColors: Color[] = [
-    { backgroundColor: 'rgb(103, 58, 183)' },
-    { backgroundColor: 'rgb(255,215,64)' },
+    { backgroundColor: '#b18efc' },
+    { backgroundColor: '#ffe680' },
   ]  
 
   constructor() { }
