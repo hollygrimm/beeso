@@ -1,4 +1,4 @@
-# Béeso
+# Dynamiculture - Béeso
 
 ![Dashboard](src/assets/dashboard.png)
 
